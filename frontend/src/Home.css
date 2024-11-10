@@ -1,0 +1,77 @@
+/* Home Component Styling */
+.Home {
+    margin : 0 ;
+    display: flex;
+    flex-direction: column;
+    place-self: center;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    /* margin: auto; */
+    /* justify-content: center; */
+    /* margin-right: auto; */
+}
+
+h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    padding: 10px 15px;
+    margin: 10px 0;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox p {
+    margin-left: 10px;
+    font-size: 1em;
+    color: #555;
+}
+
+.checkbox-icon {
+    font-size: 1.2em;
+    color: #555;
+    cursor: pointer;
+}
+
+.checkbox-icon:hover {
+    color: #cbf0bd;
+}
+
+.delete-icon {
+    font-size: 1.2em;
+    color: #555;
+    cursor: pointer;
+}
+
+.delete-icon:hover {
+    color: #ff4d4d;
+}
+
+.Create {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.empty {
+    font-size: 1.2em;
+    color: #888;
+}

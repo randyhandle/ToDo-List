@@ -23,6 +23,20 @@ app.get("/get",(req,res) => {
     .catch(err => res.json(err))
 })
 
+app.put("/update/:id", (req,res) => {
+    const{id} = req.params
+    ToDoModel.findByIdAndUpdate({_id:id},{done:true})
+    .then(result => location.reload())
+    .catch(err => res.json(err)) 
+})
+
+app.delete("/delete/:id" , (req,res) => {
+    const{id} = req.params
+    ToDoModel.findByIdAndDelete({_id:id},{done:true})
+    .then(result => location.reload())
+    .catch(err => res.json(err))
+})
+
 app.listen(5555, () => {
     console.log("Server is Running....")
     console.log("Port : 5555")

@@ -1,6 +1,5 @@
-/* Home Component Styling */
-.Home {
-    margin : 0 ;
+Home Component Styling
+/* .Home {
     display: flex;
     flex-direction: column;
     place-self: center;
@@ -12,15 +11,28 @@
     /* margin: auto; */
     /* justify-content: center; */
     /* margin-right: auto; */
-}
+/* } */
 
-h1 {
+/* .Home {
+    display: flex;
+    align-items: center;     
+    justify-content: center;   
+    min-height: 100vh;         
+    width: 100vw;             
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+    padding: 20px;             
+    overflow: hidden;
+    flex-direction: column;
+} */
+
+/* h1 {
     font-size: 2em;
     color: #333;
     margin-bottom: 20px;
-}
+} */
 
-.task {
+/* .task {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,6 +54,12 @@ h1 {
     margin-left: 10px;
     font-size: 1em;
     color: #555;
+}
+
+.icon {
+    font-size: 1.2em;
+    color: #555;
+    
 }
 
 .checkbox-icon {
@@ -74,4 +92,99 @@ h1 {
 .empty {
     font-size: 1.2em;
     color: #888;
+}
+
+.line_through{
+    text-decoration: line-through;
+} */
+
+/* Center the entire ToDo list container */
+/* .Home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+    background-color: #f0f0f0;
+} */
+
+/* .todo-card {
+    width: 400px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+} */
+
+
+.tasks-container {
+    max-height: 300px; 
+    overflow-y: auto; 
+    padding: 10px;
+}
+
+
+/* .task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+} */
+
+/* .task p {
+    margin: 0;
+} */
+
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.create_form input{
+    width: 300px;
+    padding : 10px;
+    border-bottom : 2px solid;
+    outline : none;
+}
+
+.create_form button{
+    padding: 10px;
+    background-color: black;
+    color : white;
+    cursor : pointer
+}
+
+.task{
+    display : flex;
+    align-items: center;
+    width: 345px;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    height: 35px;
+    padding: 2px 5px 2px 5px;
+    margin-top: 2px; 
+}
+
+.checkbox{
+    display : flex;
+    align-items: center;
+}
+
+.checkbox .icon{
+    margin-right : 5px;
+    font-size : 15px;
+}
+
+.task div span{
+    margin : 0px 5px 0px 4px
+}
+
+.task div .icon{
+    cursor : pointer;
 }
